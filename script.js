@@ -31,3 +31,14 @@ function calcular_triangulo() {
     document.getElementById('resultado_area1').textContent = area1;
     console.log(area1);
 }
+
+function Semillero_name(){
+    const nombres = ["Enrique","Jesus","Gustavo", "Azel", "Johann","Hugo","Luis","Angel","Ali"]
+    document.getElementById('Semillero_name').addEventListener('submit', function(event){
+        event.preventDefault();
+        var Nombre = document.getElementById('nombre_alumno').value;
+        for(let i = 0, )
+
+    } )
+    
+}
