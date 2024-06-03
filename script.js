@@ -23,3 +23,11 @@ function calcular_rectagulo() {
     document.getElementById('resultado_area').textContent = area;
     console.log(area);
 }
+
+function calcular_triangulo() {
+    var altura1 = parseInt(document.getElementById('altura1').value);
+    var base1 = parseInt(document.getElementById('base1').value);
+    var area1 = base1 * altura1 / 2;
+    document.getElementById('resultado_area1').textContent = area1;
+    console.log(area1);
+}
