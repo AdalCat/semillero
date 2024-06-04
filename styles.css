@@ -13,7 +13,7 @@ form {
     margin-top: 20px;
 }
 
-#mensaje, #resultado {
+#mensaje, #resultado, #resultado_area, #resultado_area1 {
     text-align: center;
     margin-top: 20px;
     font-size: 20px;
