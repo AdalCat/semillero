@@ -49,3 +49,14 @@ function Semillero_name(){
     
 }
 Semillero_name()
+
+function generadorContrasenas(){
+    let contrasena = '';
+    let caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let longitud = 12;
+    for(let i = 0; i < longitud; i++){
+        contrasena += caracteres.charAt(Math.floor(Math.random() * caracteres.length))   
+    }
+    document.getElementById("contrasena").innerHTML = contrasena;
+
+} generadorContrasenas()
