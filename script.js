@@ -50,13 +50,18 @@ function Semillero_name(){
 }
 Semillero_name()
 
+document.getElementById('generadorContrasenas').addEventListener('submit', function(event){
+    event.preventDefault();
+    generadorContrasenas();
+})
+
 function generadorContrasenas(){
     let contrasena = '';
     let caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    let longitud = 12;
+    let longitud = parseInt(document.getElementById('ncaracteres').value);
     for(let i = 0; i < longitud; i++){
         contrasena += caracteres.charAt(Math.floor(Math.random() * caracteres.length))   
     }
     document.getElementById("contrasena").innerHTML = contrasena;
 
-} generadorContrasenas()
+} 
