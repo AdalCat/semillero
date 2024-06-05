@@ -20,7 +20,7 @@ function getWeather(){
     }
 })
 .catch(error => {
-    //alert(error);
+    alert(error);
     console.error(error);
 })
 }
