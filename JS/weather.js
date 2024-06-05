@@ -2,7 +2,7 @@ const apikey = '8d01f55a543040d894b174007240506';
 
 function getWeather(){
     var city = document.getElementById('city').value;
-    fetch(`http://api.weatherapi.com/v1/current.json?key=${apikey}&q=${city}`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=${apikey}&q=${city}`)
     .then(response =>{
         if(!response.ok){
         throw new Error('esta ciudad no existe como tlaxcala');
